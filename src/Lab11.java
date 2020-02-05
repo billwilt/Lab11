@@ -11,9 +11,7 @@ public class Lab11 {
 		
 		Scanner scnr = new Scanner(System.in);
 		
-		//boolean wantToContinue = false;
 		String choice = "";
-		//String yesno = "";
 		String yesNoContinue = "";
 		
 		ArrayList <Movie> movieFlicks = new ArrayList<>();
@@ -67,53 +65,47 @@ public class Lab11 {
 		System.out.println("There are 22 movies in this list.");
 		
 	do {	
-		System.out.println("Please type the category are you interested in Comedy, Drama, Horror, Musical, or SciFi");
+		System.out.println("Please type the category are you interested in: Comedy, Drama, Horror, Musical, or SciFi");
 
 		choice = scnr.nextLine();
-		
 		if (choice.toLowerCase().equals("comedy")) {
-			//ArrayList<String> comedy = new ArrayList<>();
 			
 			displayCategoryMovies(movieFlicks, "comedy");
 			
 			System.out.println("Would you like to see another list? yes/no");
-			yesNoContinue = scnr.next();
+			yesNoContinue = scnr.nextLine();
 			yesNoContinue(yesNoContinue);
 			
 		} else if (choice.toLowerCase().equals("drama")) {
-			//ArrayList<String> drama = new ArrayList<>();
 			
 			displayCategoryMovies(movieFlicks, "drama");
 			
 			System.out.println("Would you like to see another list? yes/no");
-			yesNoContinue = scnr.next();
+			yesNoContinue = scnr.nextLine();
 			yesNoContinue(yesNoContinue);
 			
 		}  else if (choice.toLowerCase().equals("horror")) {
-			//ArrayList<String> horror = new ArrayList<>();
 			
 			displayCategoryMovies(movieFlicks, "horror");
 			
 			System.out.println("Would you like to see another list? yes/no");
-			yesNoContinue = scnr.next();
+			yesNoContinue = scnr.nextLine();
 			yesNoContinue(yesNoContinue);
 			
 		}  else if (choice.toLowerCase().equals("musical")) {
-			//ArrayList<String> musical = new ArrayList<>();
 			
 			displayCategoryMovies(movieFlicks, "musical");
 			
 			System.out.println("Would you like to see another list? yes/no");
-			yesNoContinue = scnr.next();
+			yesNoContinue = scnr.nextLine();
 			yesNoContinue(yesNoContinue);
 			
 		}  else if (choice.toLowerCase().equals("scifi")) {
-			//ArrayList<String> scifi = new ArrayList<>();
 			
 			displayCategoryMovies(movieFlicks, "scifi");
 			
 			System.out.println("Would you like to see another list? yes/no");
-			yesNoContinue = scnr.next();
+			yesNoContinue = scnr.nextLine();
 			yesNoContinue(yesNoContinue);
 			
 		} else {
